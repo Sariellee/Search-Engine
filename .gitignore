@@ -1,0 +1,9 @@
+shelves/collection.shlv
+shelves/collection_full.shlv
+shelves/index.shlv
+app/reuters.tar.gz
+app/reuters/
+.idea/
+venv/
+.interpreter/
+__pycache__/

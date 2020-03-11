@@ -1,0 +1,25 @@
+version: '3.2'
+
+
+services:
+  crawler:
+    build:
+      dockerfile: Dockerfile
+      context: ./crawler/
+
+  app:
+    build:
+      dockerfile: Dockerfile
+      context: ./app/
+    volumes:
+      - /Users/kamilsaitov/PycharmProjects/[IR]Search_Engine/shelves:/shelves
+
+  nginx:
+    depends_on:
+      - app
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx/
+    ports:
+      - 80:80
+

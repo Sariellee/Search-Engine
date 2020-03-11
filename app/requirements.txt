@@ -1,0 +1,5 @@
+flask==1.1.1
+beautifulsoup4==4.8.2
+jellyfish==0.7.2
+nltk==3.4.5
+Distance==0.1.3
